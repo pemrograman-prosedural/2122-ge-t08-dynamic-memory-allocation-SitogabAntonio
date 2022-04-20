@@ -17,8 +17,7 @@ int main(int _argc, char **_argv){
     int i=0;
     do
     {
-        fflush(stdin);
-        gets (input);
+        gets(input);
         if(strcmp(input, "---")==0){
             break;
         } else if (strstr(input, "student-print-all")!=NULL) {
