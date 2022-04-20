@@ -21,4 +21,4 @@ void print_student(struct student_t *_student, int count){
             printf("%s|%s|%s|female\n", _student[i].id, _student[i].name, _student[i].year);
         }
     }
-}
+} 
