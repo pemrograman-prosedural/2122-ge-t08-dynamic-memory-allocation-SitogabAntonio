@@ -1,11 +1,12 @@
-// NIM - Name
-// NIM - Name
+//  12S21015 - Sitogab Antonio Octavianus Girsang
+//  12S21049 - Jesika Audina Purba
+
 
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
-#include "libs/dorm.h"
-#include "libs/student.h"
+#include "./libs/dorm.h"
+#include "./libs/student.h"
 
 int main(int _argc, char **_argv){
     struct student_t *students = malloc(12 * sizeof(struct student_t));
