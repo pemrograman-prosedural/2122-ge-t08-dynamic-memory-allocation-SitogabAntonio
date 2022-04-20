@@ -1,7 +1,23 @@
 #include "dorm.h"
+#include <stdio.h>
+#include <string.h>
 
-/**
- * @brief Define the complete function definition here. Be sure to enlist the prototype of each function
- * defined here in the corresponding header file.
- *
- */
+struct dorm_t create_dorm(char *_name, unsigned short _capacity, enum gender_t _gender){
+    struct dorm_t d;
+    strcpy(d.name, _name);
+    d.capacity = _capacity;
+    d.gender = _gender;
+    d.residents_num = 0;
+    return d;
+}
+
+void print_dorm(struct dorm_t *_dorm, int count){
+    for (int i = 0; i < count; i++)
+    {
+        if (_dorm[i].gender==GENDER_MALE){
+        printf("%s|%d|male\n", _dorm[i].name, _dorm[i].capacity);
+        } else if(_dorm[i].gender==GENDER_FEMALE){
+            printf("%s|%d|female\n", _dorm[i].name, _dorm[i].capacity);
+        }
+    }
+}
