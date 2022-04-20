@@ -16,7 +16,22 @@ int main(int _argc, char **_argv){
     int i=0;
     do
     {
-        gets (input);
+        input[0] = '\0';
+        int c = 0;
+        while (1)
+        {
+            char x = getchar();
+            if (x == '\r')
+            {
+                continue;
+            }
+            if (x == '\n')
+            {
+                break;
+            }
+            input[c] = x;
+            input[++c] = '\0';
+        }
         if(strcmp(input, "---")==0){
             break;
         } else if (strstr(input, "dorm-print-all")!=NULL) {
