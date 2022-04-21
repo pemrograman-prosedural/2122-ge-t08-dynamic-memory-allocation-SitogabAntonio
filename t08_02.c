@@ -8,7 +8,7 @@
 #include "./libs/student.h"
 
 int main(int _argc, char **_argv){
-    struct dorm_t *dorms = malloc(4 * sizeof(struct dorm_t));
+    struct dorm_t *dorms = malloc(6 * sizeof(struct dorm_t));
     char input[100];
     char name[40];
     unsigned short capacity;
