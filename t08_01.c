@@ -9,7 +9,7 @@
 #include "./libs/student.h"
 
 int main(int _argc, char **_argv){
-    struct student_t *students = malloc(15 * sizeof(struct student_t)); 
+    struct student_t *students = malloc(13 * sizeof(struct student_t)); 
     char input[100];
     char id[12];
     char name[40];
